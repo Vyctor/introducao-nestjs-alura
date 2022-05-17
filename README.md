@@ -26,6 +26,10 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Projeto
+
+Este é um CRUD básico de livros utilizando Sequelize e Postgres, demonstrando os conceitos base do framework Nestjs.
+
 ## Installation
 
 ```bash
