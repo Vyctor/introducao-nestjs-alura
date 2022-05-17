@@ -1,0 +1,25 @@
+version: '3.7'
+
+services:
+  nest-course-database:
+    image: postgres
+    container_name: nest-course-database
+    restart: always
+    tty: true
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=ji1j1ik
+      - POSTGRES_DB=nest-course-db
+    networks:
+      - nest-course-network
+    volumes:
+      - pgdata:/data/postgres
+
+volumes:
+  pgdata:
+    driver: local
+networks:
+  nest-course-network:
+    driver: bridge
